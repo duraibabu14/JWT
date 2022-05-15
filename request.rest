@@ -1,0 +1,28 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hydXRpIiwiaWF0IjoxNjA1ODY3NjA5LCJleHAiOjE2MDU4Njc2Mjl9.6--29wUlwf3xBFsLLjmd8pkwQDNyCT-SRZggsDIRiEQ
+
+###
+POST http://localhost:5000/token
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hydXRpIiwiaWF0IjoxNjA1ODY3ODk3fQ.vX9TlpImLhPS9h_2zQn8Pp7A1K8v8fKRWmh7u4mETDU"
+}
+
+###
+DELETE  http://localhost:5000/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiU2hydXRpIiwiaWF0IjoxNjA1ODY3ODk3fQ.vX9TlpImLhPS9h_2zQn8Pp7A1K8v8fKRWmh7u4mETDU"
+}
+
+
+###
+
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "username":"Shruti"
+}
